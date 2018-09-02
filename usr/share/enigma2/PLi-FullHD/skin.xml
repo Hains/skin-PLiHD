@@ -231,14 +231,14 @@
 			<convert type="PliExtraInfo">All</convert>
 		</widget>  
 		<eLabel name="snr" position="1080,49" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" SNR" font="Regular;21" />
-		<widget source="session.FrontendStatus" render="Progress" pixmap="icons/bar_snr.png" backgroundColor="transpBlack" zPosition="1" position="1160,45" size="615,30" borderWidth="2" borderColor="grey">
+		<widget source="session.FrontendStatus" render="Progress" pixmap="PLi-FullHD/icons/bar_snr.png" backgroundColor="transpBlack" zPosition="1" position="1160,45" size="615,30" borderWidth="2" borderColor="grey">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1784,49" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21"> 
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel name="agc" position="1080,94" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" AGC" font="Regular;21" />
-		<widget source="session.FrontendStatus" render="Progress" pixmap="icons/bar_agc.png" zPosition="1" backgroundColor="transpBlack" position="1160,90" size="615,30" borderWidth="2" borderColor="grey">
+		<widget source="session.FrontendStatus" render="Progress" pixmap="PLi-FullHD/icons/bar_agc.png" zPosition="1" backgroundColor="transpBlack" position="1160,90" size="615,30" borderWidth="2" borderColor="grey">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1784,94" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
