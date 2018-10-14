@@ -92,13 +92,13 @@
 	</colors>
 
 	<parameters>
-                <parameter name="ConfigListSlider" value="22,0"/>
+		<parameter name="ConfigListSlider" value="22,0"/>
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
 		<parameter name="VirtualKeyBoard" value="68,68" />
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
 	</parameters>
 
-        <switchpixmap>
+		<switchpixmap>
 		<pixmap name="menu_on" filename="skin_default/icons/menu_on.png"/>
 		<pixmap name="menu_off" filename="skin_default/icons/menu_off.png"/>
 	</switchpixmap>
@@ -257,7 +257,7 @@
 		<widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" backgroundColor="transpBlack" zPosition="1" position="1742,135" size="38,35">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
-		</widget>   
+		</widget>
 		<widget source="session.Event_Now" render="Label" position="30,210" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
 			<convert type="EventName">NameNow</convert>
 		</widget>
@@ -332,10 +332,10 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand"
-            serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable" fieldMargins="15" nonplayableMargins="15"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80" itemsDistances="12"
-            picServiceEventProgressbar="PLi-FullHD/window/progress.png" progressbarHeight="13" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" progressbarBorderWidth="1"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
+			serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable" fieldMargins="15" nonplayableMargins="15"
+			foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80" itemsDistances="12"
+			picServiceEventProgressbar="PLi-FullHD/window/progress.png" progressbarHeight="13" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" progressbarBorderWidth="1"
+			colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
 		<widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
@@ -490,8 +490,8 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setEventTimeFont="Regular;32"
-            setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
-            backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+			setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
+			backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
@@ -546,8 +546,8 @@
 		</widget>
 		<widget name="timeline_text" position="30,555" size="1860,38" itemHeight="38" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
 		<widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
-            EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
-            ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
+			EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
+			ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
 		<widget name="timeline0" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
 		<widget name="timeline1" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
 		<widget name="timeline2" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
@@ -567,8 +567,8 @@
 		</widget>
 		<widget name="timeline_text" position="30,155" size="1860,38" itemHeight="38" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
 		<widget name="list" position="30,198" size="1860,817" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
-            EntryBackgroundColor="background" EventNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
-            ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
+			EntryBackgroundColor="background" EventNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
+			ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
 		<widget name="timeline0" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
 		<widget name="timeline1" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
 		<widget name="timeline2" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
@@ -601,7 +601,7 @@
 
 	<screen flags="wfNoBorder" name="MenuSort" position="fill">
 		<panel name="MenuTemplate"/>
-                <ePixmap pixmap="skin_default/buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38"/>
+		<ePixmap pixmap="skin_default/buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38"/>
 		<ePixmap pixmap="skin_default/buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1031" size="52,38"/>
 	</screen>
 
@@ -625,7 +625,7 @@
 
 	<screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-                <panel name="VKeyIconPanel"/>
+		<panel name="VKeyIconPanel"/>
 		<widget name="HelpWindow" position="center,650" size="80,0"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;30" valign="top"/>
@@ -828,10 +828,10 @@
 	<screen name="ChannelSelectionRadio" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="780,105" size="1110,675" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;32" scrollbarMode="showOnDemand"
-            serviceInfoFont="Regular;30" serviceNameFont="Regular;32" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80"
-            colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="12"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
+			serviceInfoFont="Regular;30" serviceNameFont="Regular;32" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable"
+			foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80"
+			colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="12"
+			colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
 		<widget source="session.Event_Now" render="Label" position="30,105" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="center" valign="center">
 		<convert type="EventName">Name</convert>
 		</widget>
@@ -943,8 +943,8 @@
 		<widget name="waitingtext" position="780,100" size="1110,912" font="Regular;33" halign="center" valign="center" zPosition="4"/>
 		<widget name="chosenletter" position="780,100" size="1110,912" foregroundColor="yellow" font="Regular;112" halign="center" valign="center" transparent="1" zPosition="4"/>
 		<widget name="list" position="780,108" size="1110,900" scrollbarMode="showOnDemand" itemHeights="100,75,45" fontSizesOriginal="36,26,24" fontSizesCompact="36,28" fontSizesMinimal="34,30"
-            pbarShift="12" pbarHeight="22" pbarLargeWidth="72" spaceRight="3" columnsOriginal="270,300" columnsCompactDescription="240,220,240" compactColumn="300"
-            treeDescription="250" partIconeShiftMinimal="8" partIconeShiftCompact="5" partIconeShiftOriginal="5" iconsWidth="33" spaceIconeText="6" trashShift="4" dirShift="3"/>
+			pbarShift="12" pbarHeight="22" pbarLargeWidth="72" spaceRight="3" columnsOriginal="270,300" columnsCompactDescription="240,220,240" compactColumn="300"
+			treeDescription="250" partIconeShiftMinimal="8" partIconeShiftCompact="5" partIconeShiftOriginal="5" iconsWidth="33" spaceIconeText="6" trashShift="4" dirShift="3"/>
 		<widget source="Service" render="Label" position="30,600" size="720,72" foregroundColor="secondFG" font="Regular;30" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
@@ -1083,7 +1083,7 @@
 		<panel name="PigTemplate"/>
 		<eLabel text="Movie list configuration" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
-                <widget name="description" position="30,550" size="720,105" font="Regular;30" halign="left"/>
+		<widget name="description" position="30,550" size="720,105" font="Regular;30" halign="left"/>
 	</screen>
 
 	<!-- Bouquet Selector -->
@@ -1403,7 +1403,6 @@
 		<widget source="DNS2text" render="Label" position="1400,720" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left"/>
 		<widget source="DNS1" render="Label" position="1640,675" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left"/>
 		<widget source="DNS2" render="Label" position="1640,720" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left"/>
-
 		<widget source="Adaptertext" render="Label" position="780,825" size="400,34" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;30" halign="left"/>
 		<widget source="Adapter" render="Label" position="1020,825" size="600,34" transparent="1" zPosition="10" font="Regular;30" halign="left"/>
 		<widget source="introduction2" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
