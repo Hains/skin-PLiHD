@@ -1356,6 +1356,115 @@
 		<widget name="filelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
+	<!-- Extra margin for wizard, never know how bad the TV is... -->
+	<screen name="WizardMarginsTemplate">
+		<panel position="left" size="10%,*"/>
+		<panel position="right" size="8%,*"/>
+		<panel position="top" size="8%,*"/>
+		<panel position="bottom" size="10%,*"/>
+	</screen>
+
+	<!-- Start Wizard -->
+
+	<screen name="RemoteControlTemplate">
+		<panel position="right" size="154,*">
+			<panel position="top" size="*,50"/>
+			<widget name="rc" pixmaps="rc.png,rcold.png" position="top" zPosition="10" size="154,500" alphatest="blend"/>
+			<widget name="arrowdown" pixmap="arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowdown2" pixmap="arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+		</panel>
+	</screen>
+	<screen name="WizardPictureLangTemplate">
+		<panel position="top" size="*,50"/>
+		<panel position="top" size="*,50">
+			<ePixmap pixmap="buttons/red.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
+			<widget name="languagetext" position="fill" font="Regular;34"/>
+		</panel>
+	</screen>
+	<!-- it's the same screen... -->
+	<screen name="StartWizard" position="fill" flags="wfNoBorder">
+		<panel name="DefaultWizard"/>
+	</screen>
+	<!-- Default wizard -->
+	<screen name="DefaultWizard" position="fill" flags="wfNoBorder">
+		<panel name="WizardMarginsTemplate"/>
+		<panel name="WizardPictureLangTemplate"/>
+		<panel name="RemoteControlTemplate"/>
+		<panel position="left" size="10,*"/>
+		<panel position="right" size="10,*"/>
+		<panel position="fill">
+			<widget name="text" position="top" size="*,400" font="Regular;34" valign="center"/>
+			<widget position="bottom" size="*,50"/>
+			<panel position="fill" layout="stack">
+				<widget source="list" render="Listbox" position="fill" scrollbarMode="showOnDemand">
+					<convert type="TemplatedMultiContent">
+						{"template": [ MultiContentEntryText(pos = (0,0),size = (1035,42),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
+						"fonts": [gFont("Regular",34)],
+						"itemHeight": 42 }
+					</convert>
+				</widget>
+				<widget name="config" position="0,0" size="1300,502" zPosition="1" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+			</panel>
+		</panel>
+	</screen>
+	<!-- Video wizard -->
+	<screen name="VideoWizard" position="fill" flags="wfNoBorder" >
+		<panel name="WizardMarginsTemplate"/>
+		<panel name="WizardPictureLangTemplate"/>
+		<panel name="RemoteControlTemplate"/>
+		<panel position="left" size="10,*"/>
+		<panel position="right" size="10,*"/>
+		<panel position="fill">
+			<widget name="text" position="top" size="*,400" font="Regular;34" valign="center"/>
+			<panel position="fill">
+				<panel position="left" size="150,*">
+					<widget name="portpic" position="top" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
+				</panel>
+				<panel position="fill" layout="stack">
+					<widget source="list" render="Listbox" position="fill" font="Regular;34" scrollbarMode="showOnDemand" >
+						<convert type="TemplatedMultiContent">
+							{"template": [ MultiContentEntryText(pos = (0,0),size = (1035,42),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
+							"fonts": [gFont("Regular",34)],
+							"itemHeight": 42 }
+						</convert>
+					</widget>
+				</panel>
+				</panel>
+			</panel>
+	</screen>
+	<!-- Language wizard -->
+	<screen name="LanguageWizard" position="fill" flags="wfNoBorder">
+		<panel name="WizardMarginsTemplate"/>
+		<panel name="RemoteControlTemplate"/>
+		<panel position="left" size="10,*"/>
+		<panel position="right" size="10,*"/>
+		<panel position="fill">
+			<widget name="text" position="top" size="*,240" font="Regular;34" valign="center"/>
+			<panel position="bottom" size="*,50"/>
+			<widget source="languages" render="Listbox" position="fill" scrollbarMode="showOnDemand">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+							MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+						],
+					"fonts": [gFont("Regular", 30)],
+					"itemHeight": 50
+					}
+				</convert>
+			</widget>
+		</panel>
+	</screen>
+	<screen name="InstallWizardOpkgUpdater" position="fill" flags="wfNoBorder">
+		<panel name="WizardMarginsTemplate"/>
+		<panel position="top" size="*,100"/>
+		<panel name="RemoteControlTemplate"/>
+		<panel position="left" size="10,*"/>
+		<panel position="right" size="10,*"/>
+		<widget source="statusbar" render="Label" position="fill" zPosition="10" halign="center" valign="center" font="Regular;34" transparent="1"/>
+	</screen>
+
 	<!-- ImageWizard -->
 
 	<screen name="ImageWizard" position="fill" flags="wfNoBorder">
@@ -2236,16 +2345,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Common interface -->
 	<screen name="MMIDialog" position="fill">
 		<panel name="PigTemplate"/>
-		<widget name="title" position="780,105" size="430,35" font="Regular;32"/>
-		<widget name="subtitle" position="780,145" size="430,35" font="Regular;32"/>
-		<widget name="entries" position="780,185" size="430,150" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand"/>
-		<widget name="bottom" position="780,225" size="430,35" font="Regular;32"/>
+		<widget name="title" position="780,105" size="900,35" font="Regular;32"/>
+		<widget name="subtitle" position="780,145" size="900,35" font="Regular;32"/>
+		<widget name="entries" position="780,185" size="900,780" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand"/>
+		<widget name="bottom" position="780,980" size="900,35" font="Regular;32"/>
 	</screen>
 	<!-- Common interface - selection -->
 	<screen name="CiSelection" position="fill" title="Common Interface">
 		<panel name="PigTemplate"/>
 		<widget name="text" position="780,105" size="1100,35" font="Regular;32"/>
-		<widget name="entries" position="780,160" size="1100,570" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="entries" position="780,160" size="1100,840" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- Subservices Quickzap -->
