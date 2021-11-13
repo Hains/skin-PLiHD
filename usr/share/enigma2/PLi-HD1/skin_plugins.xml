@@ -484,8 +484,8 @@
     <widget source="cutlist" render="Listbox" position="20,70" size="380,600" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(3)),
-						MultiContentEntryText(pos=(190,2),size=(80,20),text = 2,flags = RT_HALIGN_CENTER,backcolor = MultiContentTemplateColor(3))
+						MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(4)),
+						MultiContentEntryText(pos=(190,2),size=(80,20),text = 2,flags = RT_HALIGN_CENTER,backcolor = MultiContentTemplateColor(4))
 					],
 				 "fonts": [gFont("Regular",20)],
 				 "itemHeight": 25
