@@ -22,7 +22,8 @@
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1052,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
-      <convert type="ClockToText">Format:%-H:%M</convert>
+      <convert type="ClockToText"/>
+      <!--convert type="ClockToText">Format:%-H:%M</convert-->
     </widget>
     <widget source="session.CurrentService" render="Label" position="c-73,70" size="146,21" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="center">
       <convert type="PliExtraInfo">ResolutionString</convert>
@@ -36,7 +37,8 @@
     <widget source="ScreenPath" render="Label" position="40,3" size="1200,14" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;13" valign="center" halign="left"/>
     <widget source="Title" render="Label" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1090,15" size="150,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-      <convert type="ClockToText">Format:%-H:%M</convert>
+      <convert type="ClockToText"/>
+      <!--convert type="ClockToText">Format:%-H:%M</convert-->
     </widget>
     <widget source="global.CurrentTime" render="Label" position="940,35" size="300,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
       <convert type="ClockToText">Date</convert>

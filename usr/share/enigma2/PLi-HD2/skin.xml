@@ -26,6 +26,10 @@
   <!-- Parameters -->
 
   <parameters>
+    <!-- Allow User Dates And Times -->
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+    <!-- Allow User Dates And Times Display -->
+    <parameter name="AllowUserDatesAndTimesDisplay" value="1,1"/>
     <parameter name="AboutHddSplit" value="0"/>
     <parameter name="VirtualKeyBoard" value="45,45" />
     <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />

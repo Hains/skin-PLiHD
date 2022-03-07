@@ -71,6 +71,10 @@
   </colors>
 
   <parameters>
+    <!-- Allow User Dates And Times -->
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+    <!-- Allow User Dates And Times Display -->
+    <parameter name="AllowUserDatesAndTimesDisplay" value="1,1"/>
     <parameter name="AboutHddSplit" value="1"/>
     <parameter name="SelectionListDescr" value="34,2,700,30"/>
     <parameter name="SelectionListLock" value="4,1,25,24"/>
