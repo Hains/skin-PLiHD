@@ -735,7 +735,7 @@
 		<panel name="PigTemplate"/>
 		<widget alphaTest="on" name="thumbnail" position="0,0" size="195,147"/>
 		<widget font="Regular;30" foregroundColor="foreground" horizontalAlignment="left" name="title" position="780,150" size="1005,75" transparent="1" verticalAlignment="center" zPosition="5"/>
-		<widget position="907,750" render="Listbox" scrollbarMode="showNever" selection="1" size="780,159" source="infolist" transparent="1" zPosition="6">
+		<widget position="907,750" render="Listbox" scrollbarMode="showNever" selection="0" size="780,159" source="infolist" transparent="1" zPosition="6">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (159,[
@@ -894,7 +894,7 @@
 		<panel name="ButtonYellow"/>
 		<widget name="header" position="780,105" size="1110,45" font="Regular;36" transparent="1" noWrap="1" horizontalAlignment="left"/>
 		<widget name="text" position="780,180" size="945,69" font="Regular;39" transparent="1" noWrap="1" horizontalAlignment="right"/>
-		<widget name="list" position="915,285" size="840,337" selection="1" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/selected-menu.png"/>
+		<widget name="list" position="915,285" size="840,337" selection="0" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/selected-menu.png"/>
 		<widget name="countryFlag" position="1042,930" size="90,60" backgroundColor="#31000000" alphaTest="on"/>
 		<eLabel text="Změna jazyka" position="1117,1030" size="345,37" font="Regular;36" backgroundColor="#31000000" transparent="1"/>
 	</screen>
@@ -2036,7 +2036,7 @@
 		<widget name="list_right" position="965,100" size="925,874" scrollbarMode="showOnDemand" scrollbarBorderColor="grey" scrollbarForegroundColor="grey"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,988" size="1920,1" zPosition="1"/>
 
-		<widget source="list_left_head2" render="Listbox" position="30,990" size="925,30" selection="1" transparent="1">
+		<widget source="list_left_head2" render="Listbox" position="30,990" size="925,30" selection="0" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
@@ -2050,7 +2050,7 @@
 			</convert>
 		</widget>
 
-		<widget source="list_right_head2" render="Listbox" position="965,990" size="925,30" selection="1" transparent="1" >
+		<widget source="list_right_head2" render="Listbox" position="965,990" size="925,30" selection="0" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
@@ -2085,7 +2085,7 @@
 			<eLabel position="center,center" size="840,503" backgroundColor="grey"/>
 			<eLabel position="center,center" size="838,501" backgroundColor="toptemplatecolor" zPosition="1"/>
 			<widget name="filename" position="20,10" size="800,64" font="Regular;28" verticalAlignment="center" horizontalAlignment="center" backgroundColor="toptemplatecolor" zPosition="2"/>
-			<widget source="list" render="Listbox" position="1,100" size="838,384" scrollbarMode="showOnDemand" selection="1" backgroundColor="toptemplatecolor" zPosition="2">
+			<widget source="list" render="Listbox" position="1,100" size="838,384" scrollbarMode="showOnDemand" selection="0" backgroundColor="toptemplatecolor" zPosition="2">
 				<convert type="TemplatedMultiContent">
 					{"template": [
 						# 0   100 200 300 400 500

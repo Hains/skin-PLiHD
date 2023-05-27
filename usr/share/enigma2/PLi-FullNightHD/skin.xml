@@ -650,7 +650,7 @@
 		<widget name="scan_progress" position="30,270" size="810,22" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
 		<widget name="scan_state" position="30,307" zPosition="2" size="810,70" verticalAlignment="top" font="Regular;30" transparent="1"/>
 		<widget name="pass" position="30,380" size="810,45" verticalAlignment="center" font="Regular;33" transparent="1"/>
-		<widget name="servicelist" position="870,100" size="1020,912" itemHeight="38" font="Regular;28" selection="1" scrollbarMode="showOnDemand"/>
+		<widget name="servicelist" position="870,100" size="1020,912" itemHeight="38" font="Regular;28" selection="0" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- FastScan -->
@@ -1158,7 +1158,7 @@
 
 	<screen name="ServiceInfoSimple" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="infolist" position="780,100" size="1110,874" itemHeight="38" font="Regular;28" selection="1" scrollbarMode="showOnDemand"/>
+		<widget name="infolist" position="780,100" size="1110,874" itemHeight="38" font="Regular;28" selection="0" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="ServiceInfo" position="fill" flags="wfNoBorder">
@@ -1257,7 +1257,7 @@
 			}
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="30,570" size="720,240" backgroundColor="darkgrey" zPosition="3" selection="1" transparent="1" foregroundColor="white" scrollbarMode="showNever">
+		<widget source="menu" render="Listbox" position="30,570" size="720,240" backgroundColor="darkgrey" zPosition="3" selection="0" transparent="1" foregroundColor="white" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (0,0),size = (720,240),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
@@ -2146,7 +2146,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 		<eLabel position="30,93" size="922,39" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;33" horizontalAlignment="center"/>
 		<widget name="filelist" position="30,135" size="922,610" backgroundColor="noTransBG" scrollbarMode="showOnDemand"/>
 		<eLabel position="967,93" size="922,39" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;33" horizontalAlignment="center"/>
-		<widget name="playlist" position="967,135" size="922,610" backgroundColor="noTransBG" selection="1" scrollbarMode="showOnDemand"/>
+		<widget name="playlist" position="967,135" size="922,610" backgroundColor="noTransBG" selection="0" scrollbarMode="showOnDemand"/>
 
 		<widget name="title" position="200,765" size="1520,60" backgroundColor="noTransBG" transparent="1" font="Regular;39" verticalAlignment="top" horizontalAlignment="center"/>
 		<eLabel position="190,817" size="1540,3" backgroundColor="darkgrey"/>
@@ -2233,7 +2233,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 		<widget name="prompt" position="868,180" size="954,35" font="Regular;30" noWrap="1" transparent="1"/>
 		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphaTest="blend" zPosition="-4"/>
 		<widget name="text" position="868,240" size="954,47" font="Regular;40" horizontalAlignment="right" noWrap="1" transparent="1"/>
-		<widget name="list" position="868,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selection="1" transparent="1"/>
+		<widget name="list" position="868,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selection="0" transparent="1"/>
 		<widget name="locale" position="868,660" size="800,25" font="Regular;20" transparent="1"/>
 		<widget name="mode" position="1746,660" size="60,25" font="Regular;20" horizontalAlignment="right" transparent="1" verticalAlignment="center"/>
 		<widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1"/>
@@ -2309,7 +2309,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 
 	<screen name="Pic_Exif" title="Info" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget source="menu" render="Listbox" position="780,105" size="1110,892" selection="1" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="780,105" size="1110,892" selection="0" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [MultiContentEntryText(pos = (7,10),size = (375,45),flags = RT_HALIGN_LEFT,text = 0),
 				MultiContentEntryText(pos = (390,10),size = (645,45),flags = RT_HALIGN_LEFT,text = 1)],
@@ -2349,7 +2349,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 		<panel name="KeyChannelTemplate"/>
 		<widget name="text" position="780,105" size="1110,38" font="Regular;33"/>
 		<widget name="target" position="780,150" size="1110,38" verticalAlignment="center" font="Regular;33"/>
-		<widget name="filelist" position="780,197" size="1110,304" zPosition="1" scrollbarMode="showOnDemand" selection="1"/>
+		<widget name="filelist" position="780,197" size="1110,304" zPosition="1" scrollbarMode="showOnDemand" selection="0"/>
 		<widget name="textbook" position="780,517" size="1110,38" font="Regular;33"/>
 		<widget name="booklist" position="787,562" itemHeight="38" font="Regular;28" size="1102,456" zPosition="2" scrollbarMode="showOnDemand"/>
 	</screen>

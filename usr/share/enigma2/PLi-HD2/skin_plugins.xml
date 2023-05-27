@@ -735,7 +735,7 @@
     <panel name="PigTemplate"/>
     <widget alphaTest="on" name="thumbnail" position="0,0" size="130,98" />
     <widget font="Regular;20" foregroundColor="foreground" horizontalAlignment="left" name="title" position="520,100" size="670,50" transparent="1" verticalAlignment="center" zPosition="5" />
-    <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel2.png" selection="1" size="520,106" source="infolist" transparent="1" zPosition="6">
+    <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel2.png" selection="0" size="520,106" source="infolist" transparent="1" zPosition="6">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (106,[
@@ -894,7 +894,7 @@
     <panel name="ButtonYellow"/>
     <widget name="header" position="530,80" size="665,30" font="Regular;24" transparent="1" noWrap="1" horizontalAlignment="left" />
     <widget name="text" position="530,120" size="600,46" font="Regular;26" transparent="1" noWrap="1" horizontalAlignment="right" />
-    <widget name="list" position="590,190" size="560,225" selection="1" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/selected-menu.png"/>
+    <widget name="list" position="590,190" size="560,225" selection="0" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/selected-menu.png"/>
     <widget name="countryFlag" position="695,620" size="60,40" backgroundColor="#31000000" alphaTest="on" />
     <eLabel text="Žlutým tlačítkem změníte jazyk pro klávesnici" position="735,685" size="505,25" font="Regular;22" foregroundColor="yellow" backgroundColor="#31000000" transparent="1"/>
   </screen>
